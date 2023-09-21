@@ -1,4 +1,5 @@
-import Header from "../Header/Header"
+
+import Header from "components/Header/Header"
 import Content from "../Content/Content"
 import Total from "../Total/Total"
 
@@ -17,7 +18,7 @@ function App() {
   const parts = [part1, part2, part3]
   return (
     <>
-      <Header course = {course}/>
+      <Header course={course}/>
       <Content parts = {parts}/>
       <Total exercises = {exercises}/>
     </>
