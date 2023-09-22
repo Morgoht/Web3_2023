@@ -3,10 +3,12 @@ import Display from "../Display/Display"
 import { useState } from "react"
 
 function App() {
-  const [value, setValue] = useState(0)
+  const recentValue = JSON.parse(localStorage.getItem("counter"))
+  const [value, setValue] = useState(recentValue)
 
   const changeCount = (delta) => {
     setValue(value + delta)
+    localStorage.setItem("counter", JSON.stringify(value))
   }
 
   
