@@ -17,9 +17,9 @@ function App() {
     <>
       <p> Hello Wordl</p>
       <Display display = {value}/>
-      <Button label ="plus" data-delta="1" onClick={changeCount}/>
-      <Button label ="reset" data-delta = {-value} onClick={changeCount}/>
-      <Button label ="moins" data-delta="-1" onClick={changeCount}/>
+      <Button label ="plus" delta="+1" onClick={changeCount}/>
+      <Button label ="reset" delta = {-value} onClick={changeCount}/>
+      <Button label ="moins" delta="-1" onClick={changeCount}/>
     </>
   )
 }
