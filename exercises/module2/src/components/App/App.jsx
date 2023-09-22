@@ -5,23 +5,19 @@ import { useState } from "react"
 function App() {
   const [value, setValue] = useState(0)
 
-  const increaseByOne = () => {
-    setValue(value+1)
+  const changeCount = (delta) => {
+    setValue(value + delta)
   }
-  const decreaseByOne = () => {
-    setValue(value - 1)
-  }
-  const reset = () => {
-    setValue(0)
-  }
+
+  
 
   return (
     <>
       <p> Hello Wordl</p>
       <Display display = {value}/>
-      <Button label ="plus" onClick={increaseByOne}/>
-      <Button label ="reset" onClick={reset}/>
-      <Button label ="moins" onClick={decreaseByOne}/>
+      <Button label ="plus" data-delta="1" onClick={changeCount}/>
+      <Button label ="reset" data-delta = {-value} onClick={changeCount}/>
+      <Button label ="moins" data-delta="-1" onClick={changeCount}/>
     </>
   )
 }

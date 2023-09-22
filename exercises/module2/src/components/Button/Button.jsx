@@ -1,7 +1,9 @@
 const Button = ({label, onClick}) => {
+    const delta = e.target.dataset.delta
+    console.log(delta)
     return(
         <div>
-            <button onClick={onClick} >{label}</button>
+            <button onClick={onClick(delta)} >{label}</button>
         </div>
     )
 }
