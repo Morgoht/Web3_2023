@@ -1,9 +1,7 @@
 const Button = ({label, delta, onClick}) => {
-    console.log(parseInt(delta))
     const handleClick = (e) => {
-        
-        const delta = e.target.dataset.delta
-        console.log(parseInt(delta))
+        const deltaAttribute = e.target.dataset.delta
+        const delta =  parseInt(deltaAttribute)
         onClick(delta)
     }
     return(
