@@ -32,13 +32,12 @@ const Statistics = ({statistics}) => {
                     <col/>
                 </colgroup>
                 <tbody>
-
-                <Statistic name='good' value={good}/>
-                <Statistic name='bad' value={neutral}/>
-                <Statistic name='neutral' value={bad}/>
-                <Statistic name='all' value={all}/>
-                <Statistic name='average' value ={average}/>
-                <Statistic name='positive' value = {positive + " %"} />
+                    <Statistic name='good' value={good}/>
+                    <Statistic name='bad' value={neutral}/>
+                    <Statistic name='neutral' value={bad}/>
+                    <Statistic name='all' value={all}/>
+                    <Statistic name='average' value ={average}/>
+                    <Statistic name='positive' value = {positive + " %"} />
                 </tbody>
             </table>
         )
