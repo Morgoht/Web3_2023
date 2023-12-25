@@ -3,7 +3,7 @@ const Number = ({person}) => {
     return (
         <div>
             <span>
-                {person.name}
+                {person.name} {person.phone}
             </span>
                 
         </div>

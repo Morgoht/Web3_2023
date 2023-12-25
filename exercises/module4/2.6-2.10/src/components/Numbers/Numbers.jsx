@@ -1,11 +1,13 @@
 import Number from "./Number"
 
 const Numbers = ({persons}) => {
-    console.log(persons)
     return (
-        <ul className="no-bullets">
-            {persons.map( p => <li key={p.id} > <Number  person={p} /></li>)}
-        </ul>
+        <div>
+            <h2>Numbers</h2>
+            <ul className="no-bullets">
+                {persons.map( p => <li key={p.id} > <Number  person={p} /></li>)}
+            </ul>
+        </div>
     )
 }
 
